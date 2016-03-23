@@ -1,0 +1,17 @@
+tmp/slc6_amd64_gcc472/src/signal/GPUFit/src/signalGPUFit/GPUFit.o: \
+ src/signal/GPUFit/src/GPUFit.cc \
+ src/SimDataFormats/GeneratorProducts/interface/HepMCProduct.h \
+ src/signal/GPUFit/interface/GPUFit.hh \
+ src/signal/GPUFit/interface/HistoMap.hh \
+ src/signal/GPUFit/interface/PType.hh \
+ src/signal/GPUFit/interface/Candidates.hh \
+
+tmp/slc6_amd64_gcc472/src/signal/GPUFit/src/signalGPUFit/HistoMap.o: \
+ src/signal/GPUFit/src/HistoMap.cc \
+ src/signal/GPUFit/interface/HistoMap.hh \
+ src/signal/GPUFit/interface/PType.hh \
+
+tmp/slc6_amd64_gcc472/src/signal/GPUFit/src/signalGPUFit/PType.o: \
+ src/signal/GPUFit/src/PType.cc \
+ src/signal/GPUFit/interface/PType.hh \
+

@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=SimDataFormats
+subdirs_src_SimDataFormats = src_SimDataFormats_GeneratorProducts
