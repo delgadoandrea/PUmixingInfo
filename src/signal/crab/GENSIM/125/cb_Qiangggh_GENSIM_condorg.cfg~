@@ -1,0 +1,42 @@
+[CONDORG]
+globus_rsl = (queue=grid)(maxWalltime=4320)(maxCpuTime=4320)
+
+[CRAB]
+jobtype	   = CMSSW
+scheduler  = condor_g
+use_server = 0
+
+[CMSSW]
+datasetpath = None
+#datasetpath = /QCD_Pt-15to3000_TuneZ2star_Flat_8TeV_pythia6/Summer12_DR53X-PU_RD1_START53_V7N-v1/AODSIM
+get_edm_output = 1
+first_run = 1
+total_number_of_events = 1000000
+#events_per_job = 625
+events_per_job = 500
+#number_of_jobs = 500
+pset = Qiangggh_GENSIM_cfg.py  
+generator = lhe
+use_dbs3 = 1
+allow_NonProductionCMSSW = 1
+
+[USER]
+return_data = 0
+copy_data = 1
+publish_data = 1
+storage_element = T3_US_TAMU
+dbs_url_for_publication = phys03
+publish_data_name = LQ-ggh125_BIG_GEN_part2
+check_user_remote_dir = 1
+additional_input_files = h_ggH_WW_2L2NU_125_10M_V1_2.lhe
+ui_working_dir = LQ-ggh125_BIG_GEN_part2/
+user_remote_dir = LQ-ggh125_BIG_GEN_part2/
+srm_version = srmv2
+
+[GRID]
+rb                      = CERN
+proxy_server            = fg-myproxy.fnal.gov
+virtual_organization    = cms
+ce_white_list           = T3_US_TAMU
+se_white_list           = T3_US_TAMU
+data_location_override  = T3_US_TAMU
